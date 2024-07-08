@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/originals/40/ce/e2/40cee2ae407de99af49bea4ff771bcff.jpg?text=CSE+Background");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Lock horizontal scroll */
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.6); /* Lower opacity */
+    margin: 20px auto;
+    padding: 20px;
+    width: calc(100% - 40px); /* Suitable padding from each side */
+    max-width: 1200px; /* Maximum width for larger screens */
+    border-radius: 10px;
+    text-align: center;
+}
+    .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.header img {
+    height: 50px;
+    border-radius: 10px; /* Curved edges for logos */
+}
+.header .nav {
+    display: flex;
+    gap: 10px;
+}
+.header .nav a {
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.header .nav a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+.content h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.content p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.content h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.buttons {
+    margin: 20px 0;
+}
+.buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.buttons .training-certificate {
+    background-color: #28a745;
+}
+.buttons .training-certificate:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.buttons .final-report {
+    background-color: #17a2b8;
+}
+.buttons .final-report:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+.buttons .day-button {
+    background-color: #007bff;
+}
+.buttons .day-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.buttons .gallery {
+    background-color: #6c757d;
+}
+.buttons .gallery:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+.buttons .projects {
+    background-color: #4b0082;
+}
+.buttons .projects:hover {
+    background-color: #3a0066;
+    transform: scale(1.05);
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px; /* Same padding as header */
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .social-icons-left,
+.footer .social-icons-right {
+    display: flex;
+    gap: 10px;
+}
+.footer .social-icons-left {
+    margin-left: auto; /* Push to the left */
+}
+.footer .social-icons-right {
+    margin-right: auto; /* Push to the right */
+}
+.footer .social-icons-left a,
+.footer .social-icons-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.footer .social-icons-left a:hover,
+.footer .social-icons-right a:hover {
+    color: #007bff;
+}
+.footer .contact-info {
+    margin: 0;
+    text-align: center;
+}
+.footer .contact-info p {
+    margin: 5px 0;
+}
+.content-section {
+    display: none;
+    margin-top: 20px;
+}
+.content-section iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .container {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+    body {
+        background-size: contain; /* Make background image responsive */
+    }
+}
+@media (max-width: 750px) {
+    .header,
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .header img:first-child,
+    .header img:last-child,
+    .footer img:first-child,
+    .footer img:last-child {
+            justify-self: center; /* Center align the logos */
+        }
+    .header .nav,
+    .footer .social-icons-left,
+    .footer .social-icons-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        grid-row: 2 / 3;
+    }
+    .header .nav a,
+    .footer .social-icons-left a,
+    .footer .social-icons-right a {
+        width: 100%;
+        text-align: center;
+    }
+    body {
+        background-size: contain; /* Make background image responsive */
+    }
+}
